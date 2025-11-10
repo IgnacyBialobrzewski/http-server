@@ -1,15 +1,14 @@
 package main
 
 import (
+	"http-server/pkg/http"
 	"log"
-
-	"http1.1-server/pkg/http1"
 )
 
 func main() {
-	s := http1.Server{}
+	s := http.Server{}
 
-	s.HandleRequest(func(req *http1.HttpRequestMessage) {
+	s.HandleRequest(func(req *http.HttpRequestMessage) {
 		log.Println("Wow I'm handling a request")
 		log.Printf("%s\n", req.Method)
 	})
