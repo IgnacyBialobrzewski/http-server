@@ -1,7 +1,7 @@
 package main
 
 import (
-	"http-server/pkg/http"
+	"http-server/http"
 	"log"
 )
 
